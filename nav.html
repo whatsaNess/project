@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+body{
+  height: 100vh;
+  background: rgb(222, 222, 222); 
+
+}
+.container{
+  width: 100%;
+    
+    display: flex;
+    justify-content: end;
+    
+}
+
+.container .bx{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 8px;
+    cursor: pointer;
+}    
+
+#diaz{
+    width: 30Px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    margin: 4px 9px;
+    cursor: pointer;
+}
+.container i:hover, .container img:hover{
+    transform: scale(110%);
+
+}
+.menu{
+    width: 180px;
+    
+    background: white;
+    position: absolute;
+    right: 10px;
+    border-radius: 8px;
+    
+
+}
+.menu img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    display: grid;
+   
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    color: rgb(69, 53, 53);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+hr{
+    width: 90%;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    
+}
+.icons i{
+    margin:  2px 6px;
+    font-size: 13px;
+    font-weight:500;
+    padding: 5px 3px;
+    border-radius: 3px;
+    
+
+       
+}
+.icons i:hover{
+    background-color: rgba(94, 78, 78, 0.253);
+    cursor: pointer;
+
+
+}
+.icons span{
+    font-size:12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(83, 70, 70);
+}
+pre{
+    font-size: 13px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 5px;
+font-weight:600;
+}
+pre p{
+    font-size: 10px;
+    color: rgb(121, 107, 107);
+    margin: 2PX 5px;
+    font-weight: normal;
+    
+}
+.log i {
+    
+    margin: 0 0  10px 5px;
+    padding: 3px;
+    cursor: pointer;
+
+}
+.log span{
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(83, 70, 70);
+    cursor: pointer;
+   
+}
+button{
+    background:rgb(147, 138, 138);
+    border:none;
+    border-radius: 5px;
+    padding: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white
+    
+}
+button:hover{
+    cursor: pointer;
+    border: solid black 1px;
+    background: #4f4343;
+}
+.log i:hover{
+    background-color: rgba(255, 149, 149, 0.404);
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}
+
+
+</style>
+<body>
+ <div class="container">
+       <i class='bx bx-bell'></i>
+        <i class='bx bx-message-rounded-dots'  ></i>
+        <img src="diaz.jpg" alt="Ness" id="diaz">
+</div>
+     <div class="menu hidden" id="menu" >
+        <div class="name">
+            <img src="diaz.jpg" alt=""> 
+            <div>diaz sean</div>
+        </div>
+        <hr>
+        <div class="icons">
+            <i class='bx bx-user'> <span> Account</span></i>
+            <i class="bx bx-category-alt"> <span> Integration</span></i>
+            <i class='bx bx-cog'> <span> Setting </span></i>
+            <i class='bx bx-book-open'> <span> Guide</span></i>
+            <i class='bx bx-question-mark'> <span>Help</span></i>
+        </div>
+     
+<hr>
+        <div class="plan">
+            <pre>
+ Free plan <p> credit 1500</p> <button>upgrade</button></pre>
+<hr>
+            <div class="log">
+                <i class="bx bx-log-out"> <span >Log out</span></i>
+            </div>
+            
+        </div>
+</body>
+<script src="nav.js"></script>
+</html>
